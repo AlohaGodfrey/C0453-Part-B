@@ -58,6 +58,24 @@
     <Compile Include="Unit1\Classwork\Greeting.Designer.cs">
       <DependentUpon>Greeting.cs</DependentUpon>
     </Compile>
+    <Compile Include="Unit3\Classwork\CurrencyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit3\Classwork\CurrencyForm.Designer.cs">
+      <DependentUpon>CurrencyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unit3\Classwork\PizzaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit3\Classwork\PizzaForm.Designer.cs">
+      <DependentUpon>PizzaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unit3\Classwork\PoshNosh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit3\Classwork\PoshNosh.Designer.cs">
+      <DependentUpon>PoshNosh.cs</DependentUpon>
+    </Compile>
     <Compile Include="Unit4\Bills.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,10 +126,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Unit4\Results.cs">
+    <Compile Include="Unit4\Classwork\Results.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Unit4\Results.Designer.cs">
+    <Compile Include="Unit4\Classwork\Results.Designer.cs">
       <DependentUpon>Results.cs</DependentUpon>
     </Compile>
     <Compile Include="Unit2\RPS_Game.cs" />
@@ -127,10 +145,10 @@
     <Compile Include="Unit2\SplashScreen.Designer.cs">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Unit4\Tipster.cs">
+    <Compile Include="Unit4\Classwork\Tipster.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Unit4\Tipster.Designer.cs">
+    <Compile Include="Unit4\Classwork\Tipster.Designer.cs">
       <DependentUpon>Tipster.cs</DependentUpon>
     </Compile>
     <Compile Include="Unit4\Totals.cs">
@@ -157,6 +175,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Unit1\SplashForm.resx">
       <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit3\Classwork\CurrencyForm.resx">
+      <DependentUpon>CurrencyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit3\Classwork\PoshNosh.resx">
+      <DependentUpon>PoshNosh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Unit4\Bills.resx">
       <DependentUpon>Bills.cs</DependentUpon>
@@ -243,5 +267,9 @@
   <ItemGroup>
     <None Include="Images\Calculator.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\dining.jpg" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
