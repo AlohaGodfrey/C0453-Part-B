@@ -18,7 +18,7 @@ namespace CO453_Part_B
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MonkeyBash());
+            Application.Run(new GameUI());
         }
     }
 }

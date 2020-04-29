@@ -64,6 +64,12 @@
     <Compile Include="DataEntry.Designer.cs">
       <DependentUpon>DataEntry.cs</DependentUpon>
     </Compile>
+    <Compile Include="GameUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameUI.Designer.cs">
+      <DependentUpon>GameUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="MonkeyBash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,13 @@
     </Compile>
     <Compile Include="Results.Designer.cs">
       <DependentUpon>Results.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPS_Game.cs" />
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Tipster.cs">
       <SubType>Form</SubType>
@@ -145,6 +158,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\Shadow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\draw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\lose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Paper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Rock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\RPS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Scissors.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\win.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
