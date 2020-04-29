@@ -58,11 +58,23 @@
     <Compile Include="Build a Picture.Designer.cs">
       <DependentUpon>Build a Picture.cs</DependentUpon>
     </Compile>
+    <Compile Include="Calculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculator.Designer.cs">
+      <DependentUpon>Calculator.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataEntry.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DataEntry.Designer.cs">
       <DependentUpon>DataEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuit.Designer.cs">
+      <DependentUpon>FormQuit.cs</DependentUpon>
     </Compile>
     <Compile Include="GameUI.cs">
       <SubType>Form</SubType>
@@ -91,6 +103,12 @@
       <DependentUpon>Results.cs</DependentUpon>
     </Compile>
     <Compile Include="RPS_Game.cs" />
+    <Compile Include="SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +197,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\win.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\divide.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\multiply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\plus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\power.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
