@@ -52,11 +52,29 @@
     <Compile Include="Bills.Designer.cs">
       <DependentUpon>Bills.cs</DependentUpon>
     </Compile>
+    <Compile Include="Build a Picture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Build a Picture.Designer.cs">
+      <DependentUpon>Build a Picture.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataEntry.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DataEntry.Designer.cs">
       <DependentUpon>DataEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonkeyBash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonkeyBash.Designer.cs">
+      <DependentUpon>MonkeyBash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyWordPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyWordPad.Designer.cs">
+      <DependentUpon>MyWordPad.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,6 +104,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -99,6 +118,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\alien.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\bullseye.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Godzilla.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\king kong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\medusa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\munsters.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Nessie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\scorpius.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Shadow.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
