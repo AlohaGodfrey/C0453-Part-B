@@ -54,15 +54,17 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Click to Exit Application...";
             // 
-            // Formuit
+            // FormQuit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1123, 797);
+            this.BackgroundImage = global::CO453_Part_B.Properties.Resources.Calculator;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(724, 500);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.clickLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Formuit";
+            this.Name = "FormQuit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormQuit";
             this.Click += new System.EventHandler(this.FormQuit_Click);

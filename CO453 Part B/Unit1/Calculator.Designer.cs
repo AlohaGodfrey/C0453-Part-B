@@ -52,7 +52,7 @@
             this.titleLabel.AutoSize = true;
             this.titleLabel.Location = new System.Drawing.Point(83, 30);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(282, 26);
+            this.titleLabel.Size = new System.Drawing.Size(413, 37);
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "Godfrey\'s Simple Calculator";
             // 
@@ -69,7 +69,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(90, 127);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 26);
+            this.label1.Size = new System.Drawing.Size(204, 37);
             this.label1.TabIndex = 2;
             this.label1.Text = "First Number";
             // 
@@ -77,7 +77,7 @@
             // 
             this.firstNumberTextBox.Location = new System.Drawing.Point(304, 127);
             this.firstNumberTextBox.Name = "firstNumberTextBox";
-            this.firstNumberTextBox.Size = new System.Drawing.Size(100, 32);
+            this.firstNumberTextBox.Size = new System.Drawing.Size(100, 44);
             this.firstNumberTextBox.TabIndex = 3;
             this.firstNumberTextBox.Text = "5";
             this.firstNumberTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -86,7 +86,7 @@
             // 
             this.secondNumberTextBox.Location = new System.Drawing.Point(304, 191);
             this.secondNumberTextBox.Name = "secondNumberTextBox";
-            this.secondNumberTextBox.Size = new System.Drawing.Size(100, 32);
+            this.secondNumberTextBox.Size = new System.Drawing.Size(100, 44);
             this.secondNumberTextBox.TabIndex = 5;
             this.secondNumberTextBox.Text = "10";
             this.secondNumberTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -96,7 +96,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(90, 191);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(170, 26);
+            this.label2.Size = new System.Drawing.Size(249, 37);
             this.label2.TabIndex = 4;
             this.label2.Text = "Second Number";
             // 
@@ -104,7 +104,7 @@
             // 
             this.resultTextBox.Location = new System.Drawing.Point(304, 253);
             this.resultTextBox.Name = "resultTextBox";
-            this.resultTextBox.Size = new System.Drawing.Size(100, 32);
+            this.resultTextBox.Size = new System.Drawing.Size(100, 44);
             this.resultTextBox.TabIndex = 7;
             this.resultTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -113,7 +113,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(90, 253);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 26);
+            this.label3.Size = new System.Drawing.Size(106, 37);
             this.label3.TabIndex = 6;
             this.label3.Text = "Result";
             // 
@@ -199,7 +199,7 @@
             // 
             this.averagebtn.Location = new System.Drawing.Point(696, 220);
             this.averagebtn.Name = "averagebtn";
-            this.averagebtn.Size = new System.Drawing.Size(115, 37);
+            this.averagebtn.Size = new System.Drawing.Size(165, 47);
             this.averagebtn.TabIndex = 15;
             this.averagebtn.Tag = "average";
             this.averagebtn.Text = "Average";
@@ -210,19 +210,19 @@
             // 
             this.clearbtn.Location = new System.Drawing.Point(696, 273);
             this.clearbtn.Name = "clearbtn";
-            this.clearbtn.Size = new System.Drawing.Size(122, 37);
+            this.clearbtn.Size = new System.Drawing.Size(165, 37);
             this.clearbtn.TabIndex = 16;
             this.clearbtn.Tag = "";
             this.clearbtn.Text = "Clear";
             this.clearbtn.UseVisualStyleBackColor = true;
             this.clearbtn.Click += new System.EventHandler(this.clearbtn_Click);
             // 
-            // CalculatorForm
+            // Calculator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(929, 501);
+            this.ClientSize = new System.Drawing.Size(907, 482);
             this.Controls.Add(this.clearbtn);
             this.Controls.Add(this.averagebtn);
             this.Controls.Add(this.powerbtn);
@@ -242,7 +242,7 @@
             this.Controls.Add(this.titleLabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "CalculatorForm";
+            this.Name = "Calculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "U1_CalculatorForm";
             this.Load += new System.EventHandler(this.showSplashForm);

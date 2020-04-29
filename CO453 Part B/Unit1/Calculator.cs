@@ -110,6 +110,7 @@ namespace CO453_Part_B
         private void showExitSplashForm(object sender, EventArgs e)
         {
             FormQuit splash = new FormQuit();
+            this.Hide();
             splash.ShowDialog();
 
             splash.Close();

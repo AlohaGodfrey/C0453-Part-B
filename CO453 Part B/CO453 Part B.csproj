@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Unit1\Classwork\DataEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit1\Classwork\DataEntryForm.Designer.cs">
+      <DependentUpon>DataEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unit1\Classwork\Greeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit1\Classwork\Greeting.Designer.cs">
+      <DependentUpon>Greeting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Unit4\Bills.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +149,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Unit1\Calculator.resx">
+      <DependentUpon>Calculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit1\FormQuit.resx">
+      <DependentUpon>FormQuit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit1\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Unit4\Bills.resx">
       <DependentUpon>Bills.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +239,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\money.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Calculator.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
