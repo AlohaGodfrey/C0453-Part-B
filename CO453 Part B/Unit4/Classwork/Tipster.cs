@@ -46,6 +46,11 @@ namespace CO453_Part_B
             tipFee = 0.2;
         }
 
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            tipFee = 0.0;
+        }
+
         private void btnCalc_Click(object sender, EventArgs e)
         {
             Results newResult = new Results();

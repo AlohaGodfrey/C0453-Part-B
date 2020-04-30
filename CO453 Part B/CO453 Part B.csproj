@@ -185,6 +185,9 @@
     <EmbeddedResource Include="Unit4\Bills.resx">
       <DependentUpon>Bills.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Unit4\Classwork\Tipster.resx">
+      <DependentUpon>Tipster.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

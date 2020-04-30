@@ -20,7 +20,7 @@ namespace CO453_Part_B
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new  Calculator());
+            Application.Run(new  Tipster());
         }
     }
 }
