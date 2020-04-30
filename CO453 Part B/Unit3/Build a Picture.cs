@@ -10,6 +10,11 @@ using System.Windows.Forms;
 
 namespace CO453_Part_B
 {
+    /// <summary>
+    /// This class displays pictures depending from what is 
+    /// selected in the listbox
+    /// Author: Godfrey
+    /// </summary>
     public partial class Build_a_Picture : Form
     {
         private string[] monsters = new string[]
@@ -26,7 +31,9 @@ namespace CO453_Part_B
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// This method checks what has been clicked and then displays correct image.
+        /// </summary>
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             int index = comboBox1.SelectedIndex;

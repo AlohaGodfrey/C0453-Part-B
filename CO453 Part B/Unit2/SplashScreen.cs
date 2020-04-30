@@ -12,6 +12,10 @@ namespace CO453_Part_B
 {
     public partial class SplashScreen : Form
     {
+        /// <summary>
+        /// This class is responsible for the different splash screens
+        /// at the start and the end of the game
+        /// </summary>
         public SplashScreen()
         {
             InitializeComponent();
@@ -23,6 +27,9 @@ namespace CO453_Part_B
 
         }
 
+        /// <summary>
+        /// shows a winning splash screen and a custom message
+        /// </summary>
         public void Winner()
         {
             this.BackgroundImage = global::CO453_Part_B.Properties.Resources.win;
@@ -30,7 +37,9 @@ namespace CO453_Part_B
             label1.Text = "You have Won";
 
         }
-
+        /// <summary>
+        /// shows a losing splash screen and a custom message
+        /// </summary>
         public void Loser()
         {
             this.BackgroundImage = global::CO453_Part_B.Properties.Resources.lose;
@@ -38,7 +47,9 @@ namespace CO453_Part_B
             label1.Text = "You have Lost";
 
         }
-
+        /// <summary>
+        /// shows a draw splash screen and a custom message
+        /// </summary>
         public void Draw()
         {
             this.BackgroundImage = global::CO453_Part_B.Properties.Resources.draw;

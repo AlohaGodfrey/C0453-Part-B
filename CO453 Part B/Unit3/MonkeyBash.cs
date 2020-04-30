@@ -14,7 +14,7 @@ namespace CO453_Part_B
     /// Task 3.5
     /// This form moves a monkey image around and displays a message when
     /// the monkey image is clicked
-    /// Author: Derek
+    /// Author: Godfrey
     /// </summary>
     public partial class MonkeyBash : Form
     {
@@ -30,20 +30,29 @@ namespace CO453_Part_B
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// closes the forum
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void closeForm(object sender, EventArgs e)
         {
             Close();
         }
-
+        /// <summary>
+        /// increments upon a succesful hit
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void imagePictureBox_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("Ouch!");
             hits = hits + 1;
-
-
         }
-
+        /// <summary>
+        /// starts the timers that update each bullseye target
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void startTimer(object sender, EventArgs e)
         {
             animationTimer.Enabled = true;
@@ -52,22 +61,47 @@ namespace CO453_Part_B
             timer3.Enabled = true;
             hits = 0; misses = 0;
         }
-
+        /// <summary>
+        /// disables the timer that update each bullseye target
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void stopTimer(object sender, EventArgs e)
         {
             animationTimer.Enabled = false;
+            timer1.Enabled = false;
+            timer2.Enabled = false;
+            timer3.Enabled = false;
+           
         }
 
+        /// <summary>
+        /// debugging information that gives the coordinates of 
+        /// each mouseDown location
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MonkeyBash_MouseDown(object sender, MouseEventArgs e)
         {
             messageLabel.Text = "(" + e.X + "," + e.Y + ")";
         }
-
+        /// <summary>
+        /// incrementes the misses counter if the user misses the
+        /// bullseye target
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void gamePanel_Click(object sender, EventArgs e)
         {
             misses = misses + 1;
         }
-
+        /// <summary>
+        /// calculates how accurate the user is, using the mouseDown location
+        /// and comparing it to the target. The score is deducted from 100 meaning
+        /// the higher the score the higher the accuracy.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void imagePictureBox_MouseDown(object sender, MouseEventArgs e)
         {
             double a, b;
@@ -87,6 +121,11 @@ namespace CO453_Part_B
             misses++;
         }
 
+        /// <summary>
+        /// Moves the bullseye sprite whenever the timer updates
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void moveMonkey(object sender, EventArgs e)
         {
 
@@ -100,7 +139,11 @@ namespace CO453_Part_B
 
             Refresh();
         }
-
+        /// <summary>
+        /// Moves the bullseye sprite whenever the timer updates
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void moveBull1(object sender, EventArgs e)
         {
 

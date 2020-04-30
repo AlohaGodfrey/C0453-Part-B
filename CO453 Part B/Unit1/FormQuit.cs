@@ -16,7 +16,11 @@ namespace CO453_Part_B
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// exits application 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormQuit_Click(object sender, EventArgs e)
         {
             Application.Exit();

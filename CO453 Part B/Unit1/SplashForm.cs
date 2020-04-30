@@ -12,6 +12,9 @@ namespace CO453_Part_B
 {
     public partial class SplashForm : Form
     {
+        /// <summary>
+        /// This application shows a splashform upon starting the application.
+        /// </summary>
         public SplashForm()
         {
             InitializeComponent();

@@ -123,7 +123,11 @@ namespace CO453_Part_B
             clear();
         }
 
-
+        /// <summary>
+        /// shows starting splash screen upon loading
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void showSplashForm(object sender, EventArgs e)
         {
             SplashScreen splash = new SplashScreen();
@@ -131,7 +135,7 @@ namespace CO453_Part_B
             System.Threading.Thread.Sleep(2000);
             splash.Close();
         }
-
+        ///shows exit splash screen up exiting the application
         private void showExitSplashForm()
         {
             SplashScreen exitsplash = new SplashScreen();

@@ -22,6 +22,12 @@ namespace CO453_Part_B.Unit4
             this.Close();
         }
 
+        /// <summary>
+        /// this button updates the database, once the user clicks 
+        /// accept on the bill.cs form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAcceptBill_Click(object sender, EventArgs e)
         {
 

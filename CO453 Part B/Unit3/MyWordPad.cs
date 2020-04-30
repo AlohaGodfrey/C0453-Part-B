@@ -23,24 +23,40 @@ namespace CO453_Part_B
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// allows you to set the back color
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void setBackColour(object sender, EventArgs e)
         {
             colorDialog1.ShowDialog();
             mainRichTextBox.BackColor = colorDialog1.Color;
         }
-
+        /// <summary>
+        /// Allows you to use the cut shortcut
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             mainRichTextBox.Cut();
 
         }
-
+        /// <summary>
+        /// allows the user to paste content to the wordpad
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             mainRichTextBox.Paste();
         }
-
+        /// <summary>
+        /// allows the user to copy content to the wordpad from the clipboard
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void copyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             mainRichTextBox.Copy();
@@ -79,7 +95,11 @@ namespace CO453_Part_B
             colorDialog1.ShowDialog();
             mainRichTextBox.ForeColor = colorDialog1.Color;
         }
-
+        /// <summary>
+        /// Horizontal scrollbar that controls the font size upon adjustment
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void hScrollBar1_ValueChanged(object sender, EventArgs e)
         {
             Font f = new Font(mainRichTextBox.Font.Name, hScrollBar1.Value, FontStyle.Regular);

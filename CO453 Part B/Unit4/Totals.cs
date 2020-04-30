@@ -17,6 +17,18 @@ namespace CO453_Part_B.Unit4
             InitializeComponent();
         }
 
+        /// <summary>
+        /// this constructor is used to create an updated Total.cs
+        /// form whenever it is initialized.
+        /// </summary>
+        /// <param name="Total"></param>
+        /// <param name="LondonD"></param>
+        /// <param name="LewishamD"></param>
+        /// <param name="BroadwaterD"></param>
+        /// <param name="TotalBill"></param>
+        /// <param name="LdnBill"></param>
+        /// <param name="LewdBill"></param>
+        /// <param name="broadbill"></param>
         public Totals(int Total, int LondonD, int LewishamD, int BroadwaterD, decimal TotalBill, decimal LdnBill, decimal LewdBill, decimal broadbill)
         {
             InitializeComponent();

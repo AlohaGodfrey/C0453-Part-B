@@ -13,7 +13,12 @@ namespace CO453_Part_B.Unit4
     public partial class DataEntry : Form
     {
 
-
+        /// <summary>
+        /// This class is the main application that assks the user
+        /// to enter their details for the event
+        /// 
+        /// Author: Godfrey
+        /// </summary>
         private double billAmount = 50;
         public static int ldnum = 0;
         public static int lewdnum = 0;
@@ -28,12 +33,22 @@ namespace CO453_Part_B.Unit4
             InitializeComponent();
         }
 
+        /// <summary>
+        /// This button closes the application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnQuit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-
+        /// <summary>
+        /// This button opens up the Totals.cs using a specific 
+        /// constructor
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnTotal_Click(object sender, EventArgs e)
         {
             int totalnum = ldnum + lewdnum + broadnum;
@@ -42,7 +57,12 @@ namespace CO453_Part_B.Unit4
             TotalData.Show();
         }
 
-
+        /// <summary>
+        /// This button notifies the user if they forget to add their name,
+        /// it also calculates the bill amounts and sets up the Bills.cs form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSeeBill_Click(object sender, EventArgs e)
         {
             Bills NewBill = new Bills();

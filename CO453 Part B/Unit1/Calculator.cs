@@ -10,6 +10,11 @@ using System.Windows.Forms;
 
 namespace CO453_Part_B
 {
+    /// <summary>
+    /// A working calculator
+    /// 
+    /// Author: Godfrey
+    /// </summary>
     public partial class Calculator : Form
     {
         private double number1;
@@ -25,7 +30,7 @@ namespace CO453_Part_B
         {
             Close();
         }
-
+    
         private void Calculate(object sender, EventArgs e)
         {
             Button button = (Button)sender;
@@ -77,20 +82,22 @@ namespace CO453_Part_B
 
             showResult();
         }
-
+    
         private void getNumbers()
         {
             number1 = Convert.ToDouble(firstNumberTextBox.Text);
             number2 = Convert.ToDouble(secondNumberTextBox.Text);
         }
-
+        /// <summary>
+        /// shows the results of the calculation
+        /// </summary>
         private void showResult()
         {
             resultTextBox.Text = result.ToString();
         }
 
         /// <summary>
-        /// task 1.6
+        /// task 1.6 shows a splash from upon starting the application
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -103,7 +110,7 @@ namespace CO453_Part_B
         }
 
         /// <summary>
-        /// task 1.7
+        /// task 1.7 shows an exit splash form
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -116,7 +123,11 @@ namespace CO453_Part_B
             splash.Close();
         }
 
-        //task 1.7
+        /// <summary>
+        /// This buttons clears the text fields
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void clearbtn_Click(object sender, EventArgs e)
         {
             firstNumberTextBox.Text = "";

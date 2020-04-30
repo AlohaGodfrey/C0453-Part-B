@@ -13,8 +13,8 @@ namespace CO453_Part_B
     }
 
     /// <summary>
-    /// This class plays ...
-    /// Author: 
+    /// This class plays the RPS game
+    /// Author: Godfrey
     /// Started: 12/02/2019
     /// </summary>
     public static class RPS_Game
@@ -36,7 +36,7 @@ namespace CO453_Part_B
 
         /// <summary>
         /// *******************************************************
-        /// 
+        /// This method gives each player a name
         /// *******************************************************
         /// </summary>
         public static void Start()
@@ -50,7 +50,7 @@ namespace CO453_Part_B
 
         /// <summary>
         /// *******************************************************
-        /// 
+        /// This method works out a winner
         /// *******************************************************
         /// </summary>
         public static void End()
@@ -66,7 +66,8 @@ namespace CO453_Part_B
 
         /// <summary>
         /// *******************************************************
-        /// 
+        /// This method gives the computer a random choice between
+        /// rock, paper and stone
         /// *******************************************************
         /// </summary>
         public static void GetComputerChoice()
@@ -91,7 +92,8 @@ namespace CO453_Part_B
 
         /// <summary>
         /// *******************************************************
-        /// 
+        /// This method is used to find out the winner of the match
+        /// and increment the scores accordinggly
         /// *******************************************************
         /// </summary>
         public static void WorkoutWinner()
